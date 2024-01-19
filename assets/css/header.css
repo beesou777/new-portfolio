@@ -1,0 +1,123 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-block: 18px;
+    transition: var(--transition-2);
+    z-index: 4;
+  }
+  
+  .header a.logo{
+    height: 35px;
+    width: 35px;
+    background: var(--white);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: 900;
+  }
+  .header.active {
+    background-color: var(--eerie-black);
+    padding-block: 12px;
+    box-shadow: var(--shadow);
+  }
+  
+  .header .container,
+  .navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: -280px;
+    background-color: var(--eerie-black);
+    height: 100vh;
+    max-width: 280px;
+    width: 100%;
+    padding: 25px;
+    overflow-y: auto;
+    z-index: 2;
+    transition: 0.25s var(--cubic-out);
+    visibility: hidden;
+  }
+  
+  .navbar.active {
+    visibility: visible;
+    transform: translateX(-280px);
+    transition-duration: 0.5s;
+  }
+
+  .nav-close-btn {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .nav-close-btn .span {
+    background-color: var(--white_a80);
+    width: 25px;
+    height: 3px;
+    border-radius: 5px;
+    transition: var(--transition-1);
+  }
+  
+  .nav-close-btn .one { transform: rotate(45deg) translate(2px, 2px); }
+  
+  .nav-close-btn .two { transform: rotate(-45deg); }
+  
+  .nav-close-btn:is(:hover, :focus-visible) .span { background-color: var(--radical-red); }
+  
+  .navbar-list {
+    text-align: center;
+    padding-block: 40px;
+  }
+  
+  .navbar-link {
+    font-size: var(--fs-7);
+    font-weight: var(--fw-400);
+    padding-block: 2px;
+    text-transform: capitalize;
+    transition: var(--transition-1);
+  }
+  
+  .navbar-link:hover{
+    color: var(--radical-red);
+  }
+  
+  .navbar-title {
+    font-size: var(--fs-8);
+    font-weight: var(--fw-500);
+    line-height: 1;
+    margin-block-end: 15px;
+  }
+  
+  .navbar-text {
+    color: var(--white_a75);
+    font-weight: var(--fw-300);
+    line-height: 1.6;
+    margin-block-end: 15px;
+  }
+  
+  
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background-color: var(--black);
+    z-index: 1;
+    transition: var(--transition-1);
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .overlay.active {
+    opacity: 0.75;
+    pointer-events: all;
+  }
+  
+  
+  

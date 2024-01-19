@@ -1,0 +1,40 @@
+.portfolio { padding-block-end: 100px; }
+  
+.portfolio .section-title { margin-block-end: 60px; }
+
+.portfolio-card {
+  position: relative;
+  margin-block-end: 50px;
+}
+
+.portfolio-card :is(.card-content, .btn-icon) {
+  position: absolute;
+  z-index: 1;
+}
+
+.portfolio-card .card-content {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 15px;
+}
+
+.portfolio-card .card-tag {
+  color: var(--white_a70);
+  font-weight: var(--fw-300);
+}
+
+.portfolio-card .btn-icon {
+  top: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+
+  --hover-bg-color: var(--radical-red);
+  --hover-text-color: var(--white);
+}
+
+.portfolio-card .btn-icon svg { width: 20px; }
+
+.portfolio-card .card-title:is(:hover, :focus) { text-decoration: underline; }
+

@@ -1,0 +1,46 @@
+
+  .about .container {
+    display: grid;
+    gap: 45px;
+  }
+  
+  .about .wrapper,
+  .about-banner { padding-inline-start: 45px; }
+  
+  .about .section-title { margin-block-end: 35px; }
+  
+  .about .section-text {
+    font-size: var(--fs-6);
+    color: var(--white_a70);
+    font-weight: var(--fw-300);
+    line-height: 1.7;
+    margin-block-end: 35px;
+  }
+  
+  .about .wrapper::before {
+    top: 10px;
+    left: 0;
+    background-image: url("../images/about-quote.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .about .section-text .em {
+    color: var(--white);
+    font-weight: var(--fw-400);
+    text-decoration: underline;
+  }
+  
+  .about-banner { position: relative; }
+  
+  .about .shape-1 {
+    display: block;
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    z-index: 1;
+    width: 100px;
+  }
+  

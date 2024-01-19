@@ -1,0 +1,14 @@
+
+@import "./variables.css";
+@import "./base.css";
+@import "./header.css";
+@import "./hero.css";
+@import "./gallery.css";
+@import './cateogory.css';
+@import "./about.css";
+@import "./service.css";
+@import "./portfolio.css";
+@import "./footer.css";
+@import "./back-to-top.css";
+@import "./media.query.css";
+
