@@ -7,17 +7,13 @@ const addEventOnElements = function (elements, eventType, callback) {
   }
 }
 
-
 // PRELOADING
-
 const loadingElement = document.querySelector("[data-loading]");
 
 window.addEventListener("load", function () {
   loadingElement.classList.add("loaded");
   document.body.classList.remove("active");
 });
-
-
 
 // MOBILE NAV TOGGLE
 
@@ -44,10 +40,7 @@ const closeNav = function () {
 
 addEventOnElements(navLinks, "click", closeNav);
 
-
-
 // HEADER
-
 const header = document.querySelector("[data-header]");
 
 const activeElementOnScroll = function () {
@@ -59,7 +52,6 @@ const activeElementOnScroll = function () {
 }
 
 window.addEventListener("scroll", activeElementOnScroll);
-
 
 
 /**
@@ -167,8 +159,6 @@ window.addEventListener("scroll", function () {
   }
 });
 
-
-
 /**
  * SCROLL REVEAL
  */
@@ -190,7 +180,6 @@ const scrollReveal = function () {
 window.addEventListener("scroll", scrollReveal);
 
 scrollReveal();
-
 
 
 /**
